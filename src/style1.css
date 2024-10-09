@@ -1,0 +1,75 @@
+/* Resetting margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;  /* Soft, calm background color */
+    font-family: 'Arial', sans-serif;
+    direction: rtl; /* Right-to-left for Hebrew */
+}
+
+#game-container {
+    text-align: center;
+    background-color: #ffffff; /* White background for the container */
+    padding: 60px 40px;
+    border-radius: 12px;  /* Softer edges */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);  /* More pronounced shadow for a 3D effect */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#word-pair {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#start-word {
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+#or {
+    font-size: 36px;
+    color: #555;
+}
+
+.word {
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 48px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #f0f0f0;  /* Neutral background color */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Button shadow */
+}
+
+.word:hover {
+    background-color: #b0c4ff;  /* Slightly lighter blue on hover */
+    transform: scale(1.05);  /* Button grows slightly on hover */
+}
+
+.word:active {
+    background-color: #a0b4ff;  /* Darker blue on click */
+    transform: scale(1.02);  /* Subtle scale down on click */
+}

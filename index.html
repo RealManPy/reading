@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Reading Game - Learn Words</title>
+    <link rel="stylesheet" href="src/mainstyle.css">
 </head>
 <body>
-    <div id="game-container">
-        <h1>בחר את המילה הנכונה</h1>
-        <div id="word-pair">
-            <span id="start-word"></span>
-            <button class="word" onclick="checkAnswer(this)"></button> <span id="or"> או </span>
-            <button class="word" onclick="checkAnswer(this)"></button>
+
+    <header>
+        <div class="header-container">
+            <h1><span style="font-size:30px;">מילים</span> מילים</h1>
+            <h2>אתר המשחקים הבלעדי</h2>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h2>!ברוכים הבאים</h2>
+            <p>בחרו משחק ממגוון המשחקים המוצגים</p>
+			<div>
+				<a href="game1.html" class="game-button">מילותיים</a>
+				<a href="game2.html" class="game-button">אנלוגיות</a>
+			</div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Ran Durbach. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="scripts/script1.js"></script>
 </body>
 </html>
